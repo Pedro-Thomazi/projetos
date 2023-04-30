@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+</head>
+
+
+<style>
+    body {
+        background-color: #43ffff;
+        display: flex;
+        align-items: center;    /*Norte - Sul */
+        justify-content: center;  /*Leste - Oeste */
+        height: 100vh;
+    }
+
+    .spinner {
+        border: 8px solid rgba(0, 0, 0, 0.103);
+        border-left-color: #1f7272;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+
+        /* spin é o nome */
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+
+<body>
+    <div class="spinner"></div>
+</body>
+
+</html>
